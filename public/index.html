@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Car racing
+    </title>
+<script defer src="main15ba490d3f016906bde5.js"></script><link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header>
+        <div class="container p-3"></div>
+        <h1 class="display-3 text-center text-primary">Car racing</h1>
+    </header>
+    <main class="main p-5">
+        <section>
+            <div class="container d-flex justify-content-center">
+                <form id="create-form" class="d-flex align-items-center gap-3 me-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="create-car" placeholder="Create">
+                    </div>
+                    <div class="form-group">
+                        <input type="color" class="form-control" id="create-car-color" style="width: 50px;">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </form>
+                <form id="uptade-form" class="d-flex align-items-center gap-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="uptade-car" placeholder="Uptade">
+                    </div>
+                    <div class="form-group">
+                        <input type="color" class="form-control" id="uptade-car-color" style="width: 50px;">
+                    </div>
+                    <button type="submit" class="btn btn-success">Uptade</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="buttons d-flex justify-content-center p-5 gap-3">
+                <button id="race" type="button" class="btn btn-info">Race</button>
+                <button id="reset" type="button" class="btn btn-success">Reset</button>
+                <button id="generate" type="button" class="btn btn-secondary">Generate</button>
+            </div>
+            <ul class="cars">
+                <!-- <li>
+                    <div class="top d-flex justify-content-between">
+                        <div class="btns fs-5">
+                            <button id="start" type="button" class="btn btn-primary btn-sm">Start</button>
+                            <button id="stop" type="button" class="btn btn-primary btn-sm">Stop</button>
+                            <button id="select" type="button" class="btn btn-primary btn-sm">Select</button>
+                            <button id="select" type="button" class="btn btn-danger btn-sm"><ion-icon
+                                    name="trash-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="name">Name</div>
+                    </div>
+                    <div class="bottom d-flex justify-content-between">
+                        <i class="fa-solid fa-car-side"></i>
+                        <ion-icon name="flag"></ion-icon>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/5d93eb1089.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

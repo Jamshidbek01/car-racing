@@ -1,0 +1,32 @@
+.fa-car-side {
+    font-size: 30px;
+}
+
+.cars {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.cars li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+}
+
+.cars li:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.cars li .bottom {
+    border-bottom: 2px solid red;
+}
+
+.cars li .bottom ion-icon {
+    font-size: 30px;
+}

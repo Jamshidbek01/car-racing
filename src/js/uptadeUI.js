@@ -39,25 +39,21 @@ const uptadeUI = (data) => {
         })
     });
     let selectBtn = document.querySelectorAll('#select')
-    let carId;
     selectBtn.forEach((btn) => {
         btn.addEventListener('click', () => {
             uptadeForm['uptade-car'].value = btn.dataset.name
             uptadeForm['uptade-car-color'].value = btn.dataset.color
         })
-        carId = btn.dataset.id
         uptadeForm.addEventListener('submit', (e) => {
             e.preventDefault()
             let name = uptadeForm['uptade-car'].value
             let color = uptadeForm['uptade-car-color'].value
-            if (carId === btn.dataset.id) {
-                if (!name.trim()) {
-                    alert('Enter car name or car color!!!')
-                } else {
-                    let uptadeCar = { name, color }
-                    request(`http://127.0.0.1:3000/garage/${carId}`, 'PUT', uptadeCar)
-                    reload()
-                }
+            if (!name.trim()) {
+                alert('Enter car name or car color!!!')
+            } else {
+                let uptadeCar = { name, color }
+                request(`http://127.0.0.1:3000/garage/${btn.dataset.id}`, 'PUT', uptadeCar)
+                reload()
             }
         })
     });

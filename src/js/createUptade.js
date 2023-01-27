@@ -10,7 +10,6 @@ createForm.addEventListener('submit', (e) => {
         alert('Enter car name or color!!!')
     } else {
         const newCar = { name, color }
-        console.log(newCar);
         request('http://127.0.0.1:3000/garage', "POST", newCar)
             .then((data) => {
                 reload()
